@@ -13,7 +13,7 @@ import javax.imageio.ImageIO
  * right uml orientation in createUmlString function
  */
 class DiagramFactory(private val umlOrientation: UmlOrientation) {
-    private fun createUmlString(graph: Graph): String {
+    fun createUmlString(graph: Graph): String {
         return "@startuml\n" +
                 "skinparam useBetaStyle true\n" +
                 graph.toListOfEdges() +
